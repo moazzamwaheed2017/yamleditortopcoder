@@ -1,0 +1,45 @@
+@import './colors.scss';
+.editor-menu-theme-level2, .search-theme-level2 {
+    @include theme-primary-level3;
+    .mat-menu-item {
+        color: var(--white);
+    }
+    mat-option {
+        color: var(--white);
+    }
+}
+
+// material styles rewrite
+.cdk-overlay-container mat-form-field {
+    width: 100%;
+}
+
+mat-form-field {
+    label {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+}
+
+.mat-sort-header-container {
+    &:hover {
+        .mat-sort-header-content {
+            color: $red;
+        }
+
+        .mat-sort-header-arrow {
+            color: $red;
+        }
+    }
+
+}
+.cdk-overlay-container {
+    .mat-dialog-container{
+        @include theme-primary-level3;
+        overflow: hidden;
+        .mat-dialog-content {
+            max-height: 90vh;
+            overflow: hidden;
+        }
+    }
+}

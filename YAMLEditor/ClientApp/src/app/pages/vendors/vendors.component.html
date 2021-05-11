@@ -1,0 +1,13 @@
+
+<div class="container">
+    <app-card>
+        <div class="flex space-between">
+            <app-search [candidates]="searchCandidates" (search)="searchImpl($event)"></app-search>
+            <app-button (click)="newVendor()">New Vendor</app-button>
+        </div>
+        <div class="table-wrapper">
+            <app-vendor-list></app-vendor-list>
+        </div>
+        
+    </app-card>
+</div>

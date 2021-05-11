@@ -1,0 +1,17 @@
+@mixin link-button {
+    background: transparent;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    white-space: nowrap;
+
+    &:focus {
+        outline: none;
+    }
+}

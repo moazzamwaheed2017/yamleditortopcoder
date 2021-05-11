@@ -1,0 +1,18 @@
+@import "../../styles/colors.scss";
+
+.red-icon {
+    color: $red;
+}
+
+.item-button {
+    display: flex;
+    align-items: center;
+
+    &:focus {
+        outline: none;
+    }
+
+    >app-icons {
+        margin-right: 5px;
+    }
+}

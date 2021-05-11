@@ -3,3 +3,15 @@
 ################################################################################
 
 /.vs
+/YAMLEditor/Controllers
+/YAMLEditor/Pages
+/YAMLEditor/Properties
+/YAMLEditor/wwwroot
+/YAMLEditor/.gitignore
+/YAMLEditor/appsettings.Development.json
+/YAMLEditor/appsettings.json
+/YAMLEditor/Program.cs
+/YAMLEditor/Startup.cs
+/YAMLEditor/WeatherForecast.cs
+/YAMLEditor/YAMLEditor.csproj
+/YAMLEditor.sln

@@ -1,0 +1,15 @@
+@import "../../../styles/colors.scss";
+:host {
+    @include theme-primary-level3;
+}
+
+.container {
+    max-height: 100px;
+    overflow: auto;
+}
+
+.item {
+    cursor: pointer;
+    width: 300px;
+    height: 40px;
+}

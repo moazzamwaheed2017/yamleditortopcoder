@@ -1,0 +1,31 @@
+// $background-main: #131415;
+
+:root {
+    --black1: #161718;
+    --black2: #111213;
+    --black3: #161718;
+    --white: white;
+    --red: #e20074;
+}
+
+$background-main: var(--black1);
+$background-main-level2: var(--black2);
+$background-main-level3: var(--black3);
+
+$red: var(--red);
+$button-main: $red;
+
+@mixin theme-primary {
+    background-color: $background-main;
+    color: var(--white);
+}
+
+@mixin theme-primary-level2 {
+    background-color: $background-main-level2;
+    color: var(--white);
+}
+
+@mixin theme-primary-level3 {
+    background-color: $background-main-level3;
+    color: var(--white);
+}

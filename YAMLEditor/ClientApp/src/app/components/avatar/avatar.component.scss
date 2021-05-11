@@ -1,0 +1,47 @@
+.container:not(.column) {
+    align-items: center;
+    .avatar {
+        margin-right: 10px;
+    }
+}
+.container.column {
+    align-items: center;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.big {
+        width: 80px;
+        height: 80px;
+    }
+
+    &.middle {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.column {
+    flex-direction: column;
+    .avatar,.avatar-image {
+        margin-bottom: 10px;
+    }
+}
+
+.avatar-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    &.middle {
+        width: 80px;
+        height: 80px;
+    }
+}

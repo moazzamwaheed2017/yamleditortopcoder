@@ -1,0 +1,7 @@
+@import "./styles/colors.scss";
+
+:host {
+    display: block;
+    height: 100%;
+    @include theme-primary;
+}

@@ -1,0 +1,29 @@
+@import "../../styles/colors.scss";
+
+:host {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container {
+    position: relative;
+}
+
+input {
+    padding-left: 30px;
+    // background-color: gray;
+    border: none;
+    outline: none;
+    width: 350px;
+    background-color: $background-main-level3;
+    border: none;
+    color: var(--white);
+}
+
+app-icons {
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 100%;
+}

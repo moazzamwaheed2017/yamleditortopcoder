@@ -1,0 +1,12 @@
+:host {
+    position: relative;
+    display: block;
+}
+
+.close-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: auto;
+    cursor: pointer;
+}
