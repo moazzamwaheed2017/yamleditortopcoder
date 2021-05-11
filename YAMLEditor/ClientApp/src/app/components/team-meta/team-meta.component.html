@@ -1,0 +1,28 @@
+
+
+
+
+<div *ngIf="breadcrumbs.length===1 || breadcrumbs.length===2">
+    <div class="flex">
+        <app-icons [name]="'edit'" class="edit-icon"></app-icons>
+        <app-breadcrumbs [data]="breadcrumbs"></app-breadcrumbs>
+    </div>
+    <div class="scrollable">
+        <app-show-more [text]="node!.details.description">
+        </app-show-more>
+
+        <div *ngIf="breadcrumbs.length===2" class="users">
+            <div *ngFor="let item of node!.details.managers">
+                <app-avatar [username]="item" [duty]="'manager'" [imageSize]="'middle'"></app-avatar>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="breadcrumbs.length===3">
+    
+    <div class="flex">
+        <app-icons [name]="'edit'" class="edit-icon"></app-icons>
+        <h1 class="team-title">{{breadcrumbs[2]}}</h1>
+    </div>
+</div>

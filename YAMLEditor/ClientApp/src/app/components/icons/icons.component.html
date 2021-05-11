@@ -1,0 +1,51 @@
+<ng-container  [ngSwitch]="name">
+    <div *ngSwitchCase="'files'" class="{{iconClass}}">
+        <app-icon-files></app-icon-files>
+    </div>
+    <div *ngSwitchCase="'manage'" class="{{iconClass}}">
+        <app-icon-manage></app-icon-manage>
+    </div>
+    <div *ngSwitchCase="'vendors'" class="{{iconClass}}">
+        <app-icon-vendors></app-icon-vendors>
+    </div>
+    <div *ngSwitchCase="'gitlab'" class="{{iconClass}}">
+        <app-icon-gitlab></app-icon-gitlab>
+    </div>
+    <div *ngSwitchCase="'streams'" class="{{iconClass}}">
+        <app-icon-streams></app-icon-streams>
+    </div>
+    <div *ngSwitchCase="'search'" class="{{iconClass}}">
+        <app-icon-search></app-icon-search>
+    </div>
+    <div *ngSwitchCase="'setting'" class="{{iconClass}}">
+        <app-icon-setting></app-icon-setting>
+    </div>
+    <div *ngSwitchCase="'y'" class="{{iconClass}}">
+        <app-icon-y></app-icon-y>
+    </div>
+    <div *ngSwitchCase="'square-add'" class="{{iconClass}}">
+        <app-icon-square-add></app-icon-square-add>
+    </div>
+    <div *ngSwitchCase="'square-minus'" class="{{iconClass}}">
+        <app-icon-square-minus></app-icon-square-minus>
+    </div>
+    <div *ngSwitchCase="'edit'" class="{{iconClass}}">
+        <app-icon-edit></app-icon-edit>
+    </div>
+    <div *ngSwitchCase="'move'" class="{{iconClass}}">
+        <app-icon-move></app-icon-move>
+    </div>
+    <div *ngSwitchCase="'delete'" class="{{iconClass}}">
+        <app-icon-delete></app-icon-delete>
+    </div>
+    <div *ngSwitchCase="'moon'" class="{{iconClass}}">
+        <app-icon-moon></app-icon-moon>
+    </div>
+    <div *ngSwitchCase="'close'" class="{{iconClass}}">
+        <app-icon-close></app-icon-close>
+    </div>
+    <div *ngSwitchCase="'caret'" class="{{iconClass}}">
+        <app-icon-caret></app-icon-caret>
+    </div>
+    <div *ngSwitchDefault></div>
+</ng-container>

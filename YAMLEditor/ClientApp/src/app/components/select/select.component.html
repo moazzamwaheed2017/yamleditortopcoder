@@ -1,0 +1,37 @@
+<!-- <mat-form-field >
+    <label>{{label}}</label>
+    <select matNativeControl>
+        <option *ngFor="let item of options" value="{{item}}">{{item}}</option>
+    </select>
+</mat-form-field>
+
+<mat-form-field >
+    <label>{{label}}</label>
+    <mat-select [disableOptionCentering]="true" [formControl]="control">
+        <mat-option *ngFor="let item of options" value="{{item}}">{{item}}</mat-option>
+    </mat-select>
+</mat-form-field> -->
+
+<!-- <button (click)="openOverlay=!openOverlay">test</button>
+<app-overlay [open]="openOverlay" [compType]="overlayType"></app-overlay> -->
+<!-- 
+<button (click)="openOverlay = !openOverlay" type="button" cdkOverlayOrigin #trigger="cdkOverlayOrigin">
+    {{openOverlay ? "Close" : "Open"}}
+  </button> -->
+
+  <div class="container">
+
+    <label>{{label}}</label>
+    <app-icons [name]="'caret'" class="icon-caret" (click)="openOverlay = !openOverlay"></app-icons>
+    <input (click)="openOverlay = !openOverlay" cdkOverlayOrigin #trigger="cdkOverlayOrigin" matInput placeholder="" value="{{value}}">
+
+  </div>
+  
+  <ng-template
+    cdkConnectedOverlay
+    [cdkConnectedOverlayOrigin]="trigger"
+    [cdkConnectedOverlayOpen]="openOverlay"
+  >
+    <app-select-overlay (valueChange)="overlayValueChange($event)" [options]="options"></app-select-overlay>
+  </ng-template>
+  

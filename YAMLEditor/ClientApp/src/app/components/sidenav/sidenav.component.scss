@@ -1,0 +1,16 @@
+@import "../../styles/colors.scss";
+
+:host {
+    flex: 1;
+}
+mat-drawer-container {
+    height: 100%;
+    @include theme-primary;
+
+    mat-drawer {
+        width: 300px;
+        border: none;
+    }
+    
+}
+

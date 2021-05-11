@@ -1,0 +1,60 @@
+@import "../../styles/colors.scss";
+
+:host {
+    flex: 1;
+}
+
+app-sidenav-main {
+    display: flex;
+    flex: 1;
+    .main-first {
+        width: 30%;
+    }
+    .main-second {
+        margin-left: -30px;
+        width: 70%;
+    }
+    .main-full {
+        width: 100%;
+    }
+}
+
+.tree-wrapper {
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    background-color: $background-main-level2;
+    color: var(--white);
+    // background-color: gray;
+
+    padding-left: 20px;
+    // margin-left: 20px;
+    // transform: translateX(20px);
+}
+
+.extra-node {
+    margin-top: 20px;
+}
+
+app-group-tree  {
+    margin-top: 10px;
+    flex: 1;
+}
+
+.table-list, .main-first {
+    display: flex;
+    flex-direction: column;
+    ::ng-deep {
+        .card {
+            flex: 1;
+        }
+    }
+}
+
+.table-count-title {
+    font-size: 18px;
+}
+
+.table-wrapper {
+    padding-top: 15px;
+}

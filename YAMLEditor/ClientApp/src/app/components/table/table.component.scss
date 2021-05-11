@@ -1,0 +1,53 @@
+@import "../../styles/colors.scss";
+
+:host {
+    flex: 1;
+}
+
+.spinner-container {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  width: 100%;
+  background-color: $background-main-level2;
+
+  ::ng-deep {
+    td,th {
+      color: var(--white);
+    }
+
+    thead, td,th {
+      border-width: 1px;
+      border-color: black;
+    }
+
+    tr {
+      height: 55px;
+    }
+
+    .action-td {
+      >* {
+        ::ng-deep {
+          >button {
+            margin-left: auto;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+th.mat-sort-header-sorted {
+  color: black;
+}
+
+.container {
+  border-top: 1px solid black;
+}
+
